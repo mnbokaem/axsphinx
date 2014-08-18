@@ -17,12 +17,10 @@ the container at `/sphinx`.
 
 The container by default runs `make` in that volume to build your documentation, so it can
 be called to build your documentation in the volume without leaving a container around:
-'''
-# docker run --rm -v /home/mnbokaem/src/some_doc:/sphinx mnbokaem/axsphinx
-'''
+
+`docker run --rm -v /home/mnbokaem/src/some_doc:/sphinx mnbokaem/axsphinx`
 
 Alternatively enter the container and use it interactively
-'''
-# docker run -t -i -v /home/mnbokaem/src/some_doc:/sphinx mnbokaem/axsphinx /bin/bash
-'''
+
+`docker run -t -i -v /home/mnbokaem/src/some_doc:/sphinx mnbokaem/axsphinx /bin/bash`
 
